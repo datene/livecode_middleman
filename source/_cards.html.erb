@@ -1,0 +1,23 @@
+<div class="cards-wrapper padded">
+  <div class="container">
+    <div class="row">
+
+<% data.products.each do |product| %>
+  
+      <div class="col-xs-12 col-lg-6">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path(product.background_image) %>');">
+          <div class="card-category"><%= product.category %></div>
+          <div class="card-description">
+            <h2><%= product.card_header %></h2>
+            <p><%= product.card_text %></p>
+          </div>
+          <img class="card-user avatar avatar-large" src="<%= image_path(product.avatar) %>">
+          <%= link_to "", "/flats/#{product.name.downcase}.html", class: "card-link"  %>
+        </div>
+      </div>
+
+<% end %>
+
+    </div>
+  </div>
+</div>

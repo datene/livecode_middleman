@@ -1,4 +1,21 @@
-- name: Some product
-  image: some_product.png
-- name: Other product
-  image: other_product.png
+- name: Romain
+  role: COO
+  category: Paris
+  background_image: card-background.jpg
+  card_header: Hello world
+  card_text: some text, some more text
+  avatar: beer.png
+- name: Seb
+  role: CTO
+  category: London
+  background_image: background.jpg
+  card_header: Hello world1
+  card_text: some text, some more text2
+  avatar: globe.png
+- name: Ruben
+  role: Lead coach
+  category: Barcelona
+  background_image: money.png
+  card_header: Hello Rubyen
+  card_text: some text, some more text2
+  avatar: heart.png

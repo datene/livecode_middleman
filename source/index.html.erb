@@ -1,10 +1,26 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Bootstrap page from last friday
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
-</div>
+<%= partial "banner", locals: { banner_image: "background.jpg", header: "Hello world", banner_text: "whatever this is cool blabla make a long text yolo" } %>
+
+<%= partial "icons" %>
+
+<%= partial "cards" %>
+
+<%= partial "newsletter" %>
+
+
+<!-- image_path "logo.png" /images/logo.png
+
+image_url "logo.png" http://wwww.mydomain.org/images/logo.png
+
+image_tag "logo.png" <img src="/images/logo.png" alt="mylogo"> -->
+
+<% data.products.each do |product| %>
+  
+<p>
+  Hello, this person is <%= product.name %>
+</p>
+
+<% end %>

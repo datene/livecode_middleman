@@ -1,7 +1,7 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <% link_to "/", class: "navbar-wagon-brand" do %>
-    <%= image_tag "lewagon.png" %>
+  <%= image_tag "lewagon.png" %>
   <% end %>
 
   <!-- Right Navigation -->
@@ -19,7 +19,8 @@
     <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link">Wagon</a>
 
     <!-- Text link -->
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Team</a>
+
+    <%= link_to "Team", "team.html", class: "navbar-wagon-item navbar-wagon-link"  %>
 
     <!-- Notification link-->
     <a href="" class="navbar-wagon-item navbar-wagon-link">

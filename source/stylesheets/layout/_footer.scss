@@ -1,0 +1,19 @@
+.footer {
+  .fa {
+    color: white;
+    transition: color 200ms ease;
+    &:hover {
+      color: yellow;
+    }
+  }
+
+  a {
+    margin: 5px;
+  }
+
+  width: 100vw;
+  height: 200px;
+  background: $brand-black;
+  color: white;
+  padding: 20px;
+}
